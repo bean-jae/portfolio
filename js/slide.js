@@ -1,4 +1,4 @@
-document.querySelectorAll(".modal_img_wrap").forEach((modal) => {
+document.querySelectorAll(".modal_img").forEach((modal) => {
     const slider = modal.querySelector(".modal_img_slider");
     const slides = modal.querySelectorAll(".modal_slide");
     const prevBtn = modal.querySelector(".modal_prev");
