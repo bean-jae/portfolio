@@ -11,6 +11,7 @@ $(document).ready(function(){
     
             else if(destination.index == 1){
                 $(".circle2").addClass("active");
+                $(".p2_background").addClass("active");
                 $(".p2_line").addClass("active");
                 $(".profile").addClass("active");
                 $(".my_pic").addClass("active");
@@ -21,6 +22,7 @@ $(document).ready(function(){
             }
             else if(destination.index == 2){
                 $(".circle3").addClass("active");
+                $(".p3_background").addClass("active");
                 $(".p3_line").addClass("active");
                 $(".artwork").addClass("active");
                 $(".category").addClass("active");
@@ -32,6 +34,7 @@ $(document).ready(function(){
             }
             if(destination.index != 1){
                 $(".circle2").removeClass("active");
+                $(".p2_background").removeClass("active");
                 $(".p2_line").removeClass("active");
                 $(".profile").removeClass("active");
                 $(".my_pic").removeClass("active");
@@ -42,6 +45,7 @@ $(document).ready(function(){
             }
             if(destination.index != 2){
                 $(".circle3").removeClass("active");
+                $(".p3_background").removeClass("active");
                 $(".p3_line").removeClass("active");
                 $(".artwork").removeClass("active");
                 $(".category").removeClass("active");
