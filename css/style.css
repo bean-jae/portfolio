@@ -751,7 +751,7 @@ a{
     }  
     .introduce_text p{
         height: 120px;
-        font-size: 15.7px;
+        font-size: 0.98rem;
         line-height: 30px;
     }
     .introduce_dot{
@@ -1282,7 +1282,7 @@ a{
         margin-right: 8px;
     }
     .modal_text p{
-        font-size: 13px;
+        font-size: 0.81rem;
         width: 272px;
         line-height: 26px;
         margin-bottom: 20px;
