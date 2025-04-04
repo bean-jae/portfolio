@@ -1087,19 +1087,14 @@ a{
     align-content: center;
     cursor: pointer;
 }
-.modal_close1{
+.modal_close1, .modal_close2{
     position: absolute;
     width: 20px;
     height: 1px;
-    border-bottom: 1.5px solid #fff;
+    border-bottom: 2.5px solid #fff;
+    border-radius: 10%;
     transition: 0.4s;
-}
-.modal_close2{
-    position: absolute;
-    width: 20px;
-    height: 1px;
-    border-bottom: 1.5px solid #fff;
-    transition: 0.4s;
+    
 }
 .modal_close:hover .modal_close2{
     transform: rotate(45deg);
