@@ -1117,16 +1117,16 @@ a{
     
     .nav_wrap{
         position: absolute;
-        width: 60px;
+        width: 270px;
         height: 100px;
-        top: 67px;
-        left: 20px;
+        top: 28px;
+        left: 90px;
         color: #ffffff;
     }
     .nav_wrap>ul>li{
         display: inline-block;
         position: relative;
-        margin-bottom: 20px;
+        margin-right: 26px;
     }
     .nav_wrap>ul>li:nth-child(2){
         right: auto;
@@ -1166,9 +1166,9 @@ a{
         border-radius: 5px;
     }
     .circle1{
-        top: 73px;
+        top: 22px;
         right: auto;
-        left: 67px;
+        left: 125px;
         background-color: #FF8D22;
         transition-duration: 0.3s;
         opacity: 1;
@@ -1177,9 +1177,9 @@ a{
         opacity: 0;
     }
     .circle2{
-        top: 113px;
+        top: 22px;
         right: auto;
-        left: 82px;
+        left: 204px;
         background-color: #FF22AA;
         transition-duration: 0.3s;
         opacity: 0;
@@ -1188,9 +1188,9 @@ a{
         opacity: 1; 
     }
     .circle3{
-        top: 152px;
+        top: 22px;
         right: auto;
-        left: 97px;
+        left: 299px;
         background-color: #22FF31;
         transition-duration: 0.3s;
         opacity: 0;
@@ -1222,7 +1222,7 @@ a{
         z-index: 2;
         transition: clip-path 0.2s ease-out;
         width: 220px;
-        top: 250px;
+        top: 200px;
         left: auto;
         right: 40px;
         transform: translateX(0px);
@@ -1233,7 +1233,7 @@ a{
         object-fit: cover;
         z-index: 1;
         width: 220px;
-        top: 250px;
+        top: 200px;
         left: auto;
         right: 40px;
         transform: translateX(0px);
@@ -1245,7 +1245,7 @@ a{
         z-index: 2;
         transition: clip-path 0.2s ease-out;
         width: 230px;
-        top: 360px;
+        top: 310px;
         right: 40px;
         transform: translateX(0px);
     }
@@ -1254,7 +1254,7 @@ a{
         object-fit: cover;
         z-index: 1;
         width: 230px;
-        top: 360px;
+        top: 310px;
         right: 40px;
         transform: translateX(0px);
     }
@@ -1266,7 +1266,7 @@ a{
         z-index: 2;
         transition: clip-path 0.2s ease-out;
         width: 215px;
-        top: 470px;
+        top: 420px;
         left: auto;
         right: 40px;
         transform: translateX(0px);
@@ -1276,7 +1276,7 @@ a{
         object-fit: cover;
         z-index: 1;
         width: 215px;
-        top: 470px;
+        top: 420px;
         left: auto;
         right: 40px;
         transform: translateX(0px);
@@ -1288,7 +1288,7 @@ a{
         z-index: 2;
         transition: clip-path 0.2s ease-out;
         width: 190px;
-        top: 540px;
+        top: 490px;
         right: 40px;
         transform: translateX(0px);
     }
@@ -1297,17 +1297,18 @@ a{
         object-fit: cover;
         z-index: 1;
         width: 190px;
-        top: 540px;
+        top: 490px;
         right: 40px;
         transform: translateX(0px);
     }
 
     /* 마우스 scroll */
     .p1 p{
+        display: none;
         position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: 105px;
+        left: -10px;
+        transform: translateX(0) translateY(50%) rotate(-90deg);
+        bottom: 50%;
         color: #797979;
         font-weight: 500;
         z-index: 1;
@@ -1317,9 +1318,9 @@ a{
         width: 4px;
         height: 4px;
         border-radius: 5px;
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: 190px;
+        left: 28.5px;
+        transform: translateX(0);
+        bottom: 50%;
         background-color: #FF8D22;
         opacity: 0;
         animation: scroll 1.5s cubic-bezier(.29,.4,.44,1.06) 2.3s infinite;
@@ -1327,24 +1328,25 @@ a{
     }
     @keyframes scroll{
         0%{
-            bottom: 160px;
+            bottom: 51%;
             opacity: 0;
         }
         50%{
             opacity: 1;
         }
         75%{
-            bottom: 137px;
+            bottom: 49%;
         }
         100%{
-            bottom: 137px;
+            bottom: 49%;
         }
     }
     .mouse{
         position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        bottom: 130px;
+        left: 20px;
+        transform: translateX(0);
+        transform: translateY(50%);
+        bottom: 50%;
         width: 21px;
         height: 37px;
         border: 2px solid #797979;
@@ -1355,14 +1357,28 @@ a{
     .profile{
         position: absolute;
         left: auto;
-        right: 0px;
-        transform: translate(-50%, -300%);
-        top: 291px;
+        right: 20px;
+        transform: translate(0, -300%);
+        top: 215px;
         font-size: 30px;
         font-weight: 700;
         opacity: 0;
     }
+    @keyframes profile{
+        0%{
+            opacity: 0;
+            transform: translate(0, calc(-300% + 10px));
+        }
+        60%{
+            transform: translate(0, calc(-300% - 55px));
+        }
+        100%{
+            opacity: 1;
+            transform: translate(0, -300%);
+        }
+    }
     .p2_line{
+        display: none;
         position: absolute;
         width: 2px;
         height: 1080px;
@@ -1374,10 +1390,9 @@ a{
 
     .my_pic{
         position: absolute;
-        left: auto;
-        right: 120px;
-        top: 250px;
-        transform: translate(0,0);
+        left: 50%;
+        top: 170px;
+        transform: translate(-50%,0);
         width: 170px;
         height: 170px;
         opacity: 0;
@@ -1385,22 +1400,22 @@ a{
     @keyframes my_pic{
         0%{
             opacity: 0;
-            transform: translate(0, calc(0px + 75px));
+            transform: translate(-50%, calc(0px + 75px));
         }
         70%{
-            transform: translate(0, calc(0px - 10px));
+            transform: translate(-50%, calc(0px - 10px));
         }
         100%{
             opacity: 1;
-            transform: translate(0, 0px);
+            transform: translate(-50%, 0px);
         }
     }
     .license{
         position: absolute;
         width: 100px;
         left: auto;
-        right: 40px;
-        top: 250px;
+        right: 20px;
+        top: 170px;
         transform: translate(0, 0);
         opacity: 0;
     }
@@ -1423,7 +1438,7 @@ a{
     .license .date{
         font-size: 12px;
         font-weight: 400;
-        margin-bottom: 5px;
+        margin-bottom: 3px;
         color: #d9d9d9;
     }
     .license .license_name{
@@ -1435,8 +1450,8 @@ a{
     .work{
         position: absolute;
         width: 260px;
-        right: 40px;
-        top: 450px;
+        right: 20px;
+        top: 370px;
         transform: translate(0,0);
         opacity: 0;
         border-top: 2px solid #fff;
@@ -1494,8 +1509,8 @@ a{
         width: 300px;
         height: 280px;
         left: auto;
-        right: 40px;
-        top: 657px;
+        right: 20px;
+        top: 577px;
         transform: translate(0,0);
         text-align: right;
         opacity: 0;
@@ -1514,12 +1529,12 @@ a{
         }
     }
     .introduce>p{
-        display: none;
         font-weight: 900;
         font-size: 20px;
         margin-bottom: 15px;
     }
     .introduce_text p{
+        display: none;
         height: 94px;
         font-weight: 500;
         font-size: 13px;
@@ -1540,6 +1555,175 @@ a{
 
 
 
+    .artwork{
+        position: absolute;
+        left: 0;
+        right: 20px;
+        transform: translate(0, 0);
+        top: 145px;
+        font-size: 30px;
+        font-weight: 700;
+        opacity: 0;
+        text-align: right;
+    }
+    @keyframes artwork{
+        0%{
+            opacity: 0;
+            transform: translate(0, calc(0px - 10px));
+        }
+        60%{
+            transform: translate(0, calc(0px + 65px));
+        }
+        100%{
+            opacity: 1;
+            transform: translate(0, 0);
+        }
+    }
+    .p3_line{
+        display: none;
+        position: absolute;
+        width: 2px;
+        height: 81vh;
+        background-color: #d9d9d9;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+
+    .p3_wrap{
+        position: absolute;
+        width: 100%;
+        height: 300px;
+        left: auto;
+        top: 200px;
+        transform: translateX(0);
+        /* background-color: #22FF31; */
+    }
+    .category{
+        width: 328px;
+        left: auto;
+        right: 20px;
+        position: absolute;
+        transform: translateX(0);
+        opacity: 0;
+    }
+    @keyframes category{
+        0%{
+            opacity: 0;
+            transform: translate(0, calc(0px - 10px));
+        }
+        60%{
+            transform: translate(0, calc(0px + 65px));
+        }
+        100%{
+            opacity: 1;
+            transform: translate(0, 0);
+        }
+    }
+    .category button{
+        font-size: 12px;
+        font-weight: 500;
+        background-color: #191919;
+        color: #fff;
+        border: 1px solid #fff;
+        border-radius: 50px;
+        padding: 4px 7px;
+        cursor: pointer;
+        margin-right: 5px;
+        transition: 0.2s;
+    }
+
+    .artwork_cap{
+        position: absolute;
+        width: 230px;
+        left: auto;
+        right: 20px;
+        transform: translateX(0);
+        top: 38px;
+        font-size: 12px;
+        color: #d9d9d9;
+        opacity: 0;
+        text-align: right;
+    }
+    @keyframes artwork_cap{
+        0%{
+            opacity: 0;
+            transform: translate(0, calc(0px - 10px));
+        }
+        60%{
+            transform: translate(0, calc(0px + 65px));
+        }
+        100%{
+            opacity: 1;
+            transform: translate(0, 0);
+        }
+    }
+
+    .artwork_container{
+        width: 100%;
+        height: 400px;
+        overflow: scroll;
+        margin-top: 80px;
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-rows: repeat(2,140px);
+        overflow-x: auto;
+        overflow-y: hidden;
+        row-gap: 8px;
+        column-gap: 8px;
+        opacity: 0;
+        padding-top: 10px;
+        padding-left: 20px;
+    }
+    .my_artwork{
+        width: 274px; /*375px*/
+        height: 140px; /*240px*/
+        align-items: center;
+        justify-content: center;
+        background-color: #ffffff;
+        border-radius: 15px;
+        transition: 0.4s;
+        transform: scale(1);
+        cursor: pointer;
+        overflow: hidden;
+    }
+
+    .dummy2{
+        width: 10px;
+        height: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .modal_container{
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.4s;
+    }
+
+    .modal{
+        width: 320px;
+        height: 750px;
+        position: absolute;
+        left: auto;
+        right: 20px;
+        transform: translateX(0);
+        bottom: 90px;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .modal > img{
+        width: 320px;
+    }
 
 
 }
